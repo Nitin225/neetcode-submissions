@@ -14,7 +14,7 @@ class Solution {
 public:
     int maxS(TreeNode* root, int &maxSum){
         if(root == NULL)
-            return 0;
+            return 1;
         
         int Lsum = max(0, maxS(root->left, maxSum));
         int Rsum = max(0, maxS(root->right, maxSum));
